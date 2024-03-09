@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no height=device-height">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+<link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+<link rel="manifest" href="favicon_io/site.webmanifest">
+
+    <title>Trading Analyst</title>
+</head>
+
+<body>
+   
+    <section class="header">
+      <nav>
+        <a href="index.html ">
+          <img src="images/logo_name.png" alt=""></a>
+        <div class="glass nav-links" id="navLinks">
+            <i class="fa fa-solid fa-xmark"  onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="courses.html">COURSES</a></li>
+                <li><a href="blog.html">SERVICES</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-solid fa-bars" onclick="showMenu()"></i>
+    </nav>
+
+        <!-- --------tading view------ -->
+      <div class="tradingview-widget-container  " id="tile" style="width: 0; pointer-events: none;">
+            <div class="tradingview-widget-container__widget">
+            </div>
+            <div class="tradingview-widget-copyright"></div>
+            <script type="text/javascript"
+                src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+                    {
+                        "symbols": [
+                            {
+                                "proName": "FOREXCOM:SPXUSD",
+                                "title": "S&P 500"
+                            },
+                            {
+                                "proName": "FOREXCOM:NSXUSD",
+                                "title": "US 100"
+                            },
+                            {
+                                "proName": "FX_IDC:EURUSD",
+                                "title": "EUR to USD"
+                            },
+                            {
+                                "proName": "BITSTAMP:BTCUSD",
+                                "title": "Bitcoin"
+                            },
+                            {
+                                "proName": "BITSTAMP:ETHUSD",
+                                "title": "Ethereum"
+                            }
+                        ],
+                            "showSymbolLogo": true,
+                                "isTransparent": true,
+                                    "displayMode": "adaptive",
+                                        "colorTheme": "dark",
+                                            "locale": "en"
+                    }
+                </script>
+            </div>
+        <!-- TradingView Widget END -->
+
+<!-- --------main------code------- -->
+            <div class="main">
+                <div class="absolute">
+                    <div class="gradient">
+                    <div class="absolute inset-0 justify-center">
+                        <div class="bg-shape1 bg-teal opacity-50 bg-blur"></div>
+                        <div class="bg-shape2 bg-primary opacity-50 bg-blur"></div>
+                        <div class="bg-shape1 bg-purple opacity-50 bg-blur"></div>
+                    </div>
+                    </div>
+                </div>             
+                <div class="outer">
+                  <div class="card glass" style="--delay:-1;">
+                    <div class="content">
+                      <div class="img glass"></div>
+                      <div class="details">
+                        <span class="name">Trading</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card glass" style="--delay:0;">
+                    <div class="content">
+                      <div class="img"></div>
+                      <div class="details">
+                        <span class="name">Stocks</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card glass" style="--delay:1;">
+                    <div class="content">
+                      <div class="img"></div>
+                      <div class="details">
+                        <span class="name">Crypto</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card glass" style="--delay:2;">
+                    <div class="content">
+                      <div class="img"></div>
+                      <div class="details">
+                        <span class="name">chart analysis</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card glass" style="--delay:2;">
+                    <div class="content">
+                      <div class="img"></div>
+                      <div class="details">
+                        <span class="name">HFT Bot</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+<!-- --------------card animation -------------- -->
+            
+    <div class="wrapper">
+           <div class="cols cols0 ">
+                <h1 >Unlock Your Trading Potential with Expert Guidance. <br><span class="multiText">Crypto</span></h1>
+                <a href="" id = "hero"class="hero-btn glass">Visit us to Escape the matrix</a>
+            </div>
+
+<!-- --------------image-box------------ -->
+            <div class="cols col1">
+<div class="img-box">
+    <!-- <img src="bit1.png" alt=""> -->
+    <a href="https://ibb.co/bJjk6Ss"><img src="https://i.ibb.co/tXw9H7q/bit1.png" alt="bit1" border="0"></a>
+    <span id="shadow"></span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- --------------up-section----------------- -->
+
+    
+    <!-- ----Courses for mobile view---- -->
+
+
+    <section class="course ">     
+        <h1>Courses we Offer</h1>
+        <p>Unlock the secrets of successful trading, refine your strategies, and accelerate </p>
+        
+<div class="container reveal">
+  <div class="absolute">
+    <div class="gradient">
+    <div class="absolute inset-0 justify-center">
+        <div class="bg-shape1 bg-teal opacity-50 bg-blur"></div>
+        <div class="bg-shape2 bg-primary opacity-50 bg-blur"></div>
+        <div class="bg-shape1 bg-purple opacity-50 bg-blur"></div>
+    </div>
+    </div>
+</div>  
+        <div class="box glass">
+          
+            <div class="course-content">
+                <h2>Technical Analysis</h2>
+                <p>Learn the course fo the better future that is waITING</p>
+            </div>
+        </div>
+        <div class="box glass">
+            <div class="course-content">
+                <h2>Trading Tools</h2>
+                <p>Learn the course fo the better future that is waITING</p>
+
+            </div>
+        </div>
+        <div class="box glass">
+            <div class="course-content">
+                <h2>Fundamental Analysis</h2>
+                <p>Learn the course fo the better future that is waITING</p>
+                
+            </div>
+        </div>
+        <a class = " hero-btn glass more"  href="courses.html">Read more</a>
+        
+    </div>
+        
+        
+</section>
+</div> 
+   
+    <!-- ----sevices-card-animation---- -->
+    
+    <section class="services">
+        <div class="center">
+            <div class="top"></div>
+            <div class="stack-area">
+              <div class="left services_">
+                <div class="title">Our Services</div>
+                <div class="sub-title">
+                  <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente
+                  qui quis, facere, cupiditate, doloremque natus ex perspiciatis
+                  ratione hic corrupti adipisci ea doloribus!</p>
+                  <br />
+                  <button onclick="window.location.href='blog.html'">Read more</button>
+                </div>
+              </div>
+              
+              <div class="right">
+                <div class="cards">
+                  <div class="card_services">
+                    <div class="sub">Simplified</div>
+                    <div class="content_services">HFT Bot <br> for portfolio</div>
+                </div>
+                  <div class="card_services">
+                    <div class="sub">Boost Productivity</div>
+                    <div class="content_services">portfolio creation</div>
+                  </div>
+                  <div class="card_services">
+                    <div class="sub">Facilitated learning</div>
+                    <div class="content_services">crypto account</div>
+                  </div>
+                  <div class="card_services">
+                    <div class="sub">Support</div>
+                    <div class="content_services">Funded Acoount trading</div>
+                  </div>
+                </div>
+            </div>
+            </div>
+            <div class="bottom"></div>
+          </div>
+    </section>
+
+
+<!-- ------------services-card-animation-end------------- -->
+    <div class="text-wrapper">
+        <h1> Best platform to learn Trading </h1>
+        <h1> Best platform to learn Trading </h1>
+        <h1> Best platform to learn Trading </h1>
+        <h1> Best platform to learn Trading </h1>
+        <h1> Best platform to learn Trading </h1>
+    </div>
+
+<!-- ---------------course-for-pc------------------ -->
+    <div class="course-div">
+        <section class="campus">
+            <div class="center">
+                <div class="stack-area-course">
+                  <div class="absolute">
+                    <div class="gradient">
+                    <div class="absolute inset-0 justify-center">
+                        <div class="bg-shape1 bg-purple opacity-50 bg-blur"></div>
+                    </div>
+                    </div>
+                </div>   
+                  <div class="left">
+                    
+                    <div class="title">Our Courses</div>
+                    <div class="sub-title">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente
+                      qui quis, facere, cupiditate, doloremque natus ex perspiciatis
+                      ratione hic corrupti adipisci ea doloribus!
+                      <br />
+                      <button onclick="window.location.href='courses.html'">See more detials</button>
+                    </div>
+                    
+
+                  </div>
+                  <div class="right">
+                    <div class="wrapper_course">
+                        <div class="container_course">
+                            <input type="radio" name="slide" id="c1" checked>
+                            <label for="c1" class="card_course">
+                                <div class="row_course">
+                                    <div class="icon">1</div>
+                                    <div class="description">
+                                        <h4>Trade Analysis</h4>
+                                        <p>Winter has so much to offer -
+                                         creative activities</p>
+                                    </div>
+                                </div>
+                            </label>
+                            <input type="radio" name="slide" id="c2" >
+                            <label for="c2" class="card_course">
+                                <div class="row_course">
+                                    <div class="icon">2</div>
+                                    <div class="description">
+                                        <h4>Fundamental Analysis</h4>
+                                        <p>Gets better every day -
+                                         stay tuned</p>
+                                    </div>
+                                </div>
+                            </label>
+                            <input type="radio" name="slide" id="c3" >
+                            <label for="c3" class="card_course">
+                                <div class="row_course">
+                                    <div class="icon">3</div>
+                                    <div class="description">
+                                        <h4>Mindset Mastery</h4>
+                                        <p>Help people all over the world</p>
+                                    </div>
+                                </div>
+                            </label>
+                            <input type="radio" name="slide" id="c4" >
+                            <label for="c4" class="card_course">
+                                <div class="row_course">
+                                    <div class="icon">4</div>
+                                    <div class="description">
+                                        <h4>Risk Management</h4>
+                                        <p>Space engineering becomes
+                                         more and more advanced</p>
+                                    </div>
+                                </div>
+                            </label>
+                            <input type="radio" name="slide" id="c5" >
+                            <label for="c5" class="card_course">
+                                <div class="row_course">
+                                    <div class="icon">5</div>
+                                    <div class="description">
+                                        <h4>Secret Strategies</h4>
+                                        <p>Space engineering becomes
+                                         more and more advanced</p>
+                                    </div>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+              </div>
+        </section>
+    
+    </div>
+
+
+    <!-- ----Channels---- -->
+    <section class="facilities ">
+        <h1>Our Channel</h1>
+        <p>Unlock the secrets of successful trading, refine your strategies, and accelerate </p>
+        <div class="row reveal">
+            <div class="facilities-col">
+                <div class="player">
+                <iframe width="350" height="200" src="https://www.youtube.com/embed/LTsE1IpDWsU?si=OU0z9OolDpd8ncUa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <h3>Forex Trading</h3>
+            </div>
+            <div class="facilities-col">
+                <div class="player">
+                <iframe width="350" height="200" src="https://www.youtube.com/embed/YF9CI3R84ko?si=JOEiceeExFDgosJ-&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <h3>Live Market Prediction</h3>
+            </div>
+            <div class="facilities-col">
+                <div class="player">
+                    <iframe width="350" height="200" src="https://www.youtube.com/embed/MHHzwyBTKFM?si=Kgh6wsUOokhaurXj&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <h3>Crypto Market analysis</h3>
+            </div>
+        </div>
+        <a id= " hero" class = " hero-btn glass  "href="https://www.youtube.com/@tradeanalyst"> See more Detials</a>
+    </section>
+
+    <!-- ----testimonials---- -->
+
+    <section class="section__container">
+        <h3>What Our student says ?</h3>
+        <p id="test">Unlock the secrets of successful trading, refine your strategies, and accelerate </p>
+        <div class="section__grid">
+          <div class="section__card">
+            <span><i class="ri-double-quotes-l"></i></span>
+            <h4>Love the simplicity</h4>
+            <p>
+              They understood our brand and created a stunning website design.
+              Professional, responsive, and on-time delivery. Highly recommended!
+            </p>
+            <h5>Allan Collins</h5>
+            <h6>Managing Director</h6>
+          </div>
+          <div class="section__card">
+            <span><i class="ri-double-quotes-l"></i></span>
+            <h4>Excellent Designs</h4>
+            <p>
+              Efficient, reliable, and results-oriented. Visually appealing
+              website, improved online visibility. Highly recommended!
+            </p>
+            <h5>Tanya Grant</h5>
+            <h6>Ceo & Founder</h6>
+          </div>
+          <div class="section__card">
+            <span><i class="ri-double-quotes-l"></i></span>
+            <h4>Efficient and Reliable</h4>
+            <p>
+              Best decision we made. Stunning website, exceptional support. Always
+              available and prompt issue resolution. Hassle-free experience!
+            </p>
+            <h5>Clay Washington</h5>
+            <h6>Fashion Designer</h6>
+          </div>
+        </div>
+      </section>
+    <!-- ----ctc---- -->
+
+    <section class="cta reveal">
+        <h3>ENROLL FOR OUR CARIOUS COURSES </h3>
+        <a href="" class="hero-btn">CONTACT US</a>
+
+    </section> 
+
+    <!-- ----footer----- -->
+    <section class="footer">
+        
+      <footer class="new_footer_area bg_color">
+         <div class="new_footer_top">
+             <div class="container-footer">
+                 <div class="row">
+                     <div class="col-lg-3 col-md-6">
+                         <div class="f_widget company_widget wow fadeInLeft" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInLeft;">
+                          
+                             <h3 class="f-title f_900 t_color f_size_35"><img src="log.jpg" alt="">  Trade Analyst</h3>
+                             <p>Your destination for trading courses and services, <br> including HFT bot creation, crypto management, <br> funded account trading, and tailored portfolio solutions.</p>
+                                 <button class=" hero-btn  " type="submit">Subscribe</button>
+                             
+                         </div>
+                     </div>
+                     <div class="col-lg-3 col-md-6">
+                         <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInLeft;">
+                             <h3 class="f-title f_600 t_color f_size_18">Explore</h3>
+                             <ul class="list-unstyled f_list">
+                                 <li><a href="index.html">Home</a></li>
+                                 <li><a href="about.html">About</a></li>
+                                 <li><a href="courses.html">Courses</a></li>
+                                 <li><a href="blog.html">Services</a></li>
+                                 <li><a href="contact.html">Contact</a></li>
+                             </ul>
+                         </div>
+                     </div>
+                    
+                     <div class="col-lg-3 col-md-6">
+                         <div class="f_widget social-widget pl_70 wow fadeInLeft" data-wow-delay="0.8s" style="visibility: visible; animation-delay: 0.8s; animation-name: fadeInLeft;">
+                             <h3 class="f-title f_600 t_color f_size_18">Team Solutions</h3>
+                             <div class="f_social_icon">
+                                 <a href="#" class="fab fa-facebook"></a>
+                                 <a href="https://x.com/tradeanalyst786?t=NPtOxhXId4hxAj2IKV_EGA&s=08" class="fab fa-x-twitter"></a>
+                                 <a href="https://www.instagram.com/tradeanalyst786?igsh=cnY4MDZ4OXJqcHNs" class="fab fa-instagram"></a>
+                                 <a  href="mailto:tradeanalyst786@gmail.com" class="fab fa-at"></a>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+             <div class="footer_bg">
+                 <div class="footer_bg_one"></div>
+                 <div class="footer_bg_two"></div>
+             </div>
+         </div>
+         <div class="footer_bottom">
+             <div class="container-footer">
+                 <div class="row align-items-center">
+                     <div class="col-lg-6 col-sm-7">
+                         <p class="mb-0 f_400">© Varloom Inc.. 2024 All rights reserved.</p>
+                     </div>
+                     <div class="col-lg-6 col-sm-5 text-right">
+                         <p>Made by  <a href="http://cakecounter.com" target="_blank">Varloom</a></p>
+                     </div>
+                 </div>
+             </div>
+         </div>
+     </footer>
+     
+             </section>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+
+
+
+
+    <!-- ----JavaScript---- -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+        // --------typing effect using cdn------
+        var typingEffect = new Typed(".multiText", {
+            strings: ["Trading", "Forex", "Index Trading","Analytics"], loop: true,
+            typeSpeed: 100,
+            backSpeed: 80,
+            backDelay: 1500
+        })
+
+        // -----scroll animation-----
+
+        window.addEventListener('scroll', reveal);
+
+        function reveal() {
+
+            var reveals = document.querySelectorAll('.reveal');
+
+            for (var i = 0; i < reveals.length; i++) {
+
+                var windowheight = window.innerHeight;
+                var revealtop = reveals[i].getBoundingClientRect().top;
+                var revealpoint = 150;
+
+                if (revealtop < windowheight - revealpoint) {
+                    reveals[i].classList.add('active');
+                }
+                else {
+                    reveals[i].classList.remove('active');
+
+                }
+            }
+        }
+
+    <!-- ------------services-------------- -->
+    let cards = document.querySelectorAll(".card_services");
+      let stackArea = document.querySelector(".stack-area");
+
+      function rotateCards() {
+        let angle = 0;
+        cards.forEach((card) => {
+          if (card.classList.contains("active")) {
+            card.style.transform = `translate(-50%, -120vh) rotate(-48deg)`;
+          } else {
+            card.style.transform = `translate(-50%, -50%) rotate(${angle}deg)`;
+            angle = angle - 10;
+          }
+        });
+      }
+
+      rotateCards();
+
+      window.addEventListener("scroll", () => {
+        let proportion =
+          stackArea.getBoundingClientRect().top / window.innerHeight;
+        if (proportion <= 0) {
+          let n = cards.length;
+          let index = Math.ceil((proportion * n) / 2);
+          index = Math.abs(index) - 1;
+          for (let i = 0; i < n; i++) {
+            if (i <= index) {
+              cards[i].classList.add("active");
+            } else {
+              cards[i].classList.remove("active");
+            }
+          }
+          rotateCards();
+        }
+      });
+
+      //Code for responsiveness
+
+      function adjust() {
+        let windowWidth = window.innerWidth;
+        let left = document.querySelector(".left");
+        left.remove();
+        if (windowWidth < 800) {
+          stackArea.insertAdjacentElement("beforebegin", left);
+        } else {
+          stackArea.insertAdjacentElement("afterbegin", left);
+        }
+      }
+      adjust();
+
+      //detect Resize
+
+      window.addEventListener("resize", adjust);
+
+
+      
+    </script>
+</body>
+
+</html>
